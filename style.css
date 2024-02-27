@@ -1,0 +1,210 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+:root {
+    --azul_escuro: #38792d;
+    --branco_claro: #F3F5FC;
+    --white: #FFFFFF;
+    --cinza: #D8DFE8;
+    --principal-font-text: #495057;
+}
+
+body {
+    background-color: var(--branco_claro);
+    font-weight: 400;
+    box-sizing: border-box;
+    height: 100vh;
+    font-family: 'Inter', sans-serif;
+}
+
+textarea {
+    height: 200px;
+    background-color: var(--branco_claro);
+    resize: none;
+    border: none; /* Removendo a borda preta ao clicar */
+    outline: none;
+    font-size: 1.5rem;
+    color: var(--azul_escuro);
+}
+
+textarea::placeholder {
+    font-size: 1.5rem;
+    color: var(--principal-font-text);
+    font-weight: 400;
+}
+
+.cabecalho nav {
+    padding: 2%;
+}
+
+.codificador {
+    display: flex;
+    justify-content: center; /* Centraliza na horizontal */
+    align-items: center; /* Centraliza na vertical */
+    gap: 40px;
+}
+
+.codificador__digitar {
+    padding: 0 5%;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    max-width: 600px; /* Limita a largura para melhor leitura */
+    width: 100%; /* Garante que o conteúdo seja responsivo */
+}
+
+.codificador__digitar__div1 {
+    display: flex;
+    gap: 8px;
+}
+
+.codificador__digitar__texto {
+    width: 90%;
+    font-size: 1rem;
+}
+
+.codificador__digitar__div2 {
+    display: flex;
+    gap: 16px;
+}
+
+.codificador__digitar__criptografia {
+    padding: 16px;
+    width: 50%;
+    background-color: var(--azul_escuro);
+    color: var(--white);
+    border-radius: 16px;
+    font-weight: 700;
+    font-size: 1rem;
+    border: none;
+    cursor: pointer;
+}
+
+.codificador__digitar__criptografia:hover{
+    background-color: #074803;
+}
+
+.codificador__digitar__descriptografia {
+    padding: 16px;
+    width: 50%;
+    background-color: var(--cinza);
+    color: var(--azul_escuro);
+    border-radius: 16px;
+    font-weight: 400;
+    font-size: 1rem;
+    border: 1px solid var(--azul_escuro);
+    cursor: pointer;
+}
+
+.codificador__digitar__descriptografia:hover{
+    background-color: #b4bebe
+}
+
+.codificador__resultado {
+    width: 40%;
+    background-color: var(--white);
+    box-shadow: 0px 16px 24px -8px #00000014;
+    border-radius: 24px;
+    padding: 3% 5%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+    justify-content: space-between;
+}
+
+.desactive {
+    display: none !important;
+}
+
+.output_default_txt {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    width: 50%;
+    align-items: center;
+    text-align: center;
+}
+
+.text_output {
+    font-family: sans-serif;
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: var(--principal-font-text);
+    word-break: break-all;
+}
+
+.codificador__resultado__conteudo {
+    text-align: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.codificador__resultado h2,
+.codificador__resultado p {
+    width: 80%;
+    font-size: 1rem;
+}
+
+.codificador__resultado h2 {
+    font-weight: 700;
+    font-size: 1.25rem;
+}
+
+.codificador__resultado__copiar {
+    padding: 16px;
+    background-color: var(--white);
+    color: var(--azul_escuro);
+    border-radius: 16px;
+    width: 50%;
+    font-weight: 400;
+    font-size: 1rem;
+    border: 1px solid var(--azul_escuro);
+    cursor: pointer;
+}
+
+.rodape {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-top: 3%;
+    background-color: var(--azul_escuro);
+    color: var(--white);
+    padding: 16px;
+}
+
+@media (max-width: 1200px) {
+    main {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    textarea {
+        height: 150px;
+    }
+
+    .codificador__resultado {
+        align-items: center;
+        width: 70%;
+    }
+
+    .codificador__resultado__copiar {
+        width: 50%;
+    }
+
+    .output_default_txt p {
+        width: 90%;
+    }
+}
+
+.cursor_drop {
+    cursor: no-drop;
+}
+
+.cursor_pointer {
+    cursor: pointer;
+}

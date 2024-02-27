@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio Decodificador</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="cabecalho">
+    <nav class="cabecalho__info">
+    </nav>
+</header>
+<main class="codificador">
+    <section class="codificador__digitar">
+        <textarea class="codificador__digitar__titulo" placeholder="Digite o seu texto"></textarea>
+        <div class="codificador__digitar__div1">
+            <p class="codificador__digitar__texto">Apenas letras minúsculas</p>
+        </div>
+        <div class="codificador__digitar__div2">
+            <button id="criptografia" class="codificador__digitar__criptografia">Criptografar</button>
+            <button id="descriptografia" class="codificador__digitar__descriptografia">Descriptografar</button>
+        </div>
+    </section>
+    <section class="codificador__resultado">
+        <div id="output_default" class="codificador__resultado__conteudo">
+            <h2 class="codificador__resultado__subtitulo">Nenhuma mensagem encontrada</h2>
+            <p class="codificador__resultado__texto">Digite um texto qualquer</p>
+        </div>
+        <div id="output_default_txt" class="output_default_txt desactive">
+            <p id="text_output" class="text_output"></p>
+        </div>
+        <button id="copiar" class="codificador__resultado__copiar desactive">Copiar</button>
+    </section>
+</main>
+<footer class="rodape">
+    <p>Desenvolvido por Venilson</p>
+</footer>
+
+<script src="main.js"></script>
+
+</body>
+</html>
